@@ -1,0 +1,6 @@
+C:\ElevenFifty\PassportGrantCounty\Passport.Models\bin\Debug\Passport.Models.dll
+C:\ElevenFifty\PassportGrantCounty\Passport.Models\bin\Debug\Passport.Models.pdb
+C:\ElevenFifty\PassportGrantCounty\Passport.Models\obj\Debug\Passport.Models.csprojAssemblyReference.cache
+C:\ElevenFifty\PassportGrantCounty\Passport.Models\obj\Debug\Passport.Models.csproj.CoreCompileInputs.cache
+C:\ElevenFifty\PassportGrantCounty\Passport.Models\obj\Debug\Passport.Models.dll
+C:\ElevenFifty\PassportGrantCounty\Passport.Models\obj\Debug\Passport.Models.pdb
