@@ -1,8 +1,11 @@
 ﻿using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration;
+using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using Passport.Data.Entities;
 
 namespace Passport.Data
 {
@@ -25,9 +28,50 @@ namespace Passport.Data
         {
         }
 
+        public DbSet<Background> Backgrounds { get; set; }
+        public DbSet<Comment> Comments { get; set; }
+        public DbSet<RoadMap> RoadMap { get; set; }
+        public DbSet<Reply> Replies { get; set; }
+        public DbSet<Stamp> Stamp { get; set; }
+        public DbSet<Experience> Experience { get; set; }
+
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
+        }
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Experience>()
+                .Property(b => b._ChallengeScoreIncrease).HasColumnName("ChallengeScoreIncrease");
+            modelBuilder.Entity<Experience>()
+                .Property(b => b._RoadMaps).HasColumnName("RoadMaps");
+            modelBuilder.Entity<Background>()
+                .Property(b => b._AdventureLog).HasColumnName("SkillProficiencies");
+            modelBuilder.Entity<RoadMap>()
+            .Property(b => b._ChallengeScoreIncrease).HasColumnName("ChallengeScoreIncrease");
+            modelBuilder.Entity<RoadMap>()
+                .Property(b => b._Stamps).HasColumnName("Stamps");
+            modelBuilder
+                .Conventions
+                .Remove<PluralizingTableNameConvention>();
+            modelBuilder
+                .Configurations
+                .Add(new IdentityUserLoginConfiguration())
+                .Add(new IdentityUserRoleConfiguration());
+        }
+    }
+    public class IdentityUserLoginConfiguration : EntityTypeConfiguration<IdentityUserLogin>
+    {
+        public IdentityUserLoginConfiguration()
+        {
+            HasKey(iul => iul.UserId);
+        }
+    }
+    public class IdentityUserRoleConfiguration : EntityTypeConfiguration<IdentityUserRole>
+    {
+        public IdentityUserRoleConfiguration()
+        {
+            HasKey(iur => iur.UserId);
         }
     }
 }

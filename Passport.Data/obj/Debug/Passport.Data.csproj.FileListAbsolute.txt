@@ -14,3 +14,5 @@ C:\ElevenFifty\PassportGrantCounty\Passport.Data\bin\Debug\Microsoft.AspNet.Iden
 C:\ElevenFifty\PassportGrantCounty\Passport.Data\obj\Debug\Passport.Data.csproj.CopyComplete
 C:\ElevenFifty\PassportGrantCounty\Passport.Data\obj\Debug\Passport.Data.dll
 C:\ElevenFifty\PassportGrantCounty\Passport.Data\obj\Debug\Passport.Data.pdb
+C:\ElevenFifty\PassportGrantCounty\Passport.Data\bin\Debug\Newtonsoft.Json.dll
+C:\ElevenFifty\PassportGrantCounty\Passport.Data\bin\Debug\Newtonsoft.Json.xml
