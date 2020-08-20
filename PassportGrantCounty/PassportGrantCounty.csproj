@@ -175,6 +175,7 @@
     <Compile Include="Controllers\CommentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ReplyController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -244,6 +245,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Views\Background\" />
     <Folder Include="Views\Comment\" />
+    <Folder Include="Views\Reply\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -259,6 +261,10 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Passport.Contracts\Passport.Contracts.csproj">
+      <Project>{A6BED41C-29C9-40A9-BD2B-4A96E4F6A38F}</Project>
+      <Name>Passport.Contracts</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Passport.Data\Passport.Data.csproj">
       <Project>{7535510b-f49e-4c57-98cf-5a2304121ac7}</Project>
       <Name>Passport.Data</Name>

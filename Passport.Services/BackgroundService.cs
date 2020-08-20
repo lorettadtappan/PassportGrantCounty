@@ -28,9 +28,9 @@ namespace Passport.Services
             return _ctx.SaveChanges() == 1;
         }
 
-        public bool Delete(int BackgroundId)
+        public bool Delete(int backgroundId)
         {
-            var entity = _ctx.Backgrounds.Single(e => e.BackgroundId == BackgroundId);
+            var entity = _ctx.Backgrounds.Single(e => e.BackgroundId == backgroundId);
             if (entity != null)
             {
                 _ctx.Backgrounds.Remove(entity);
@@ -58,9 +58,9 @@ namespace Passport.Services
             }).ToList();
             return backgroundList;
         }
-        public BackgroundDetailModel GetBackgroundById(int BackgroundId)
+        public BackgroundDetailModel GetBackgroundById(int backgroundId)
         {
-            var entity = _ctx.Backgrounds.Single(e => e.BackgroundId == BackgroundId);
+            var entity = _ctx.Backgrounds.Single(e => e.BackgroundId == backgroundId);
             return new BackgroundDetailModel()
             {
                 BackgroundId = entity.BackgroundId,

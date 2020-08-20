@@ -58,9 +58,9 @@ namespace Passport.Services
             return _ctx.SaveChanges() == 1;
         }
 
-        public bool Delete(int CommentId)
+        public bool Delete(int commentId)
         {
-            var entity = _ctx.Comments.Single(e => e.CommentId == CommentId);
+            var entity = _ctx.Comments.Single(e => e.CommentId == commentId);
             if (entity != null)
             {
                 entity.IsDeleted = true;
@@ -79,10 +79,10 @@ namespace Passport.Services
             return _ctx.SaveChanges() == 1;
         }
 
-        public IEnumerable<CommentListModel> GetAllCommentsByRoadMapId(int RoadMapId)
+        public IEnumerable<CommentListModel> GetAllCommentsByRoadMapId(int roadMapId)
         {
             var commentList = _ctx.Comments
-                .Where(e => e.RoadMapId == RoadMapId && e.IsDeleted == false)
+                .Where(e => e.RoadMapId == roadMapId && e.IsDeleted == false)
                 .Select(e => new CommentListModel
                 {
                     CommentId = e.CommentId,
@@ -127,9 +127,9 @@ namespace Passport.Services
             return commentList;
         }
 
-        public CommentListModel GetCommentById(int CommentId)
+        public CommentListModel GetCommentById(int commentId)
         {
-            var entity = _ctx.Comments.Single(e => e.CommentId == CommentId);
+            var entity = _ctx.Comments.Single(e => e.CommentId == commentId);
             var model = new CommentListModel
             {
                 Author = _ctx.Users.FirstOrDefault(u => u.Id == entity.OwnerId.ToString()).UserName,

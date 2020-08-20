@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="IBackgroundService.cs" />
     <Compile Include="ICommentService.cs" />
+    <Compile Include="IReplyService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

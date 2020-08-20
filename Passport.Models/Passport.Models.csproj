@@ -53,6 +53,9 @@
     <Compile Include="CommentModels\CommentCreateModel.cs" />
     <Compile Include="CommentModels\CommentUpdateModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReplyModels\ReplyCreateModel.cs" />
+    <Compile Include="ReplyModels\ReplyListModel.cs" />
+    <Compile Include="ReplyModels\ReplyUpdateModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
