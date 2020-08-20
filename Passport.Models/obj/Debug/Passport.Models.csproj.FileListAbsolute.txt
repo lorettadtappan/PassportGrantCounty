@@ -4,3 +4,6 @@ C:\ElevenFifty\PassportGrantCounty\Passport.Models\obj\Debug\Passport.Models.csp
 C:\ElevenFifty\PassportGrantCounty\Passport.Models\obj\Debug\Passport.Models.csproj.CoreCompileInputs.cache
 C:\ElevenFifty\PassportGrantCounty\Passport.Models\obj\Debug\Passport.Models.dll
 C:\ElevenFifty\PassportGrantCounty\Passport.Models\obj\Debug\Passport.Models.pdb
+C:\ElevenFifty\PassportGrantCounty\Passport.Models\bin\Debug\Newtonsoft.Json.dll
+C:\ElevenFifty\PassportGrantCounty\Passport.Models\bin\Debug\Newtonsoft.Json.xml
+C:\ElevenFifty\PassportGrantCounty\Passport.Models\obj\Debug\Passport.Models.csproj.CopyComplete

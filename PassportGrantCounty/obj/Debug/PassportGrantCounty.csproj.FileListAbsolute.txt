@@ -113,3 +113,8 @@ C:\ElevenFifty\PassportGrantCounty\PassportGrantCounty\bin\Microsoft.CodeDom.Pro
 C:\ElevenFifty\PassportGrantCounty\PassportGrantCounty\obj\Debug\PassportGrantCounty.csproj.CopyComplete
 C:\ElevenFifty\PassportGrantCounty\PassportGrantCounty\obj\Debug\PassportGrantCounty.dll
 C:\ElevenFifty\PassportGrantCounty\PassportGrantCounty\obj\Debug\PassportGrantCounty.pdb
+C:\ElevenFifty\PassportGrantCounty\PassportGrantCounty\bin\PagedList.dll
+C:\ElevenFifty\PassportGrantCounty\PassportGrantCounty\bin\Passport.Contracts.dll
+C:\ElevenFifty\PassportGrantCounty\PassportGrantCounty\bin\Passport.Services.dll.config
+C:\ElevenFifty\PassportGrantCounty\PassportGrantCounty\bin\PagedList.xml
+C:\ElevenFifty\PassportGrantCounty\PassportGrantCounty\bin\Passport.Contracts.pdb
