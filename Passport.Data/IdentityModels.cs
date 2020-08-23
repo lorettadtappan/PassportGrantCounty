@@ -32,7 +32,7 @@ namespace Passport.Data
         public DbSet<Comment> Comments { get; set; }
         public DbSet<RoadMap> RoadMaps { get; set; }
         public DbSet<Reply> Replies { get; set; }
-        public DbSet<Stamp> Stamp { get; set; }
+        public DbSet<Stamp> Stamps { get; set; }
         public DbSet<Experience> Experiences { get; set; }
 
         public static ApplicationDbContext Create()

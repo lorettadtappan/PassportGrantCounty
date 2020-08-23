@@ -87,6 +87,11 @@
     <Compile Include="RoadMapModels\RoadMapDetailViewModel.cs" />
     <Compile Include="RoadMapModels\RoadMapListModel.cs" />
     <Compile Include="RoadMapModels\RoadMapUpdateModel.cs" />
+    <Compile Include="StampModels\StampCreateModel.cs" />
+    <Compile Include="StampModels\StampDetailModel.cs" />
+    <Compile Include="StampModels\StampDetailViewModel.cs" />
+    <Compile Include="StampModels\StampListModel.cs" />
+    <Compile Include="StampModels\StampUpdateModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

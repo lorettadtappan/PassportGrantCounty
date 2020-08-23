@@ -178,6 +178,7 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ReplyController.cs" />
     <Compile Include="Controllers\RoadMapController.cs" />
+    <Compile Include="Controllers\StampController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -250,6 +251,7 @@
     <Folder Include="Views\Experience\" />
     <Folder Include="Views\Reply\" />
     <Folder Include="Views\RoadMap\" />
+    <Folder Include="Views\Stamp\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

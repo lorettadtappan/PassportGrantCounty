@@ -20,15 +20,6 @@ namespace Passport.Data.Entities
         [Required]
         public int StampLevel { get; set; }
         [Required]
-        public bool IsActive { get; set; }
-        internal string _ChallengeScoreIncrease { get; set; }
-        [NotMapped]
-        public Dictionary<string, string> ChallengeScoreIncrease
-        {
-            get { return _ChallengeScoreIncrease == null ? null : JsonConvert.DeserializeObject<Dictionary<string, string>>(_ChallengeScoreIncrease); }
-            set { _ChallengeScoreIncrease = JsonConvert.SerializeObject(value); }
-        }
-        [Required]
         [ForeignKey("RoadMap")]
         public int RoadMapId { get; set; }
         public virtual RoadMap RoadMaps { get; set; }
