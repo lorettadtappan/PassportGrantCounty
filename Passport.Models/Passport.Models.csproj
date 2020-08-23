@@ -52,6 +52,11 @@
     <Compile Include="CommentModels\CommentListModel.cs" />
     <Compile Include="CommentModels\CommentCreateModel.cs" />
     <Compile Include="CommentModels\CommentUpdateModel.cs" />
+    <Compile Include="ExperienceModels\ExperienceCreateModel.cs" />
+    <Compile Include="ExperienceModels\ExperienceUpdateModel.cs" />
+    <Compile Include="ExperienceModels\ExperienceDetailModel.cs" />
+    <Compile Include="ExperienceModels\ExperienceDetailViewModel.cs" />
+    <Compile Include="ExperienceModels\ExperienceListModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReplyModels\ReplyCreateModel.cs" />
     <Compile Include="ReplyModels\ReplyListModel.cs" />
@@ -59,6 +64,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Passport.Data\Passport.Data.csproj">
+      <Project>{7535510B-F49E-4C57-98CF-5A2304121AC7}</Project>
+      <Name>Passport.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

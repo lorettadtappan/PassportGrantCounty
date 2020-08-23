@@ -173,6 +173,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BackgroundController.cs" />
     <Compile Include="Controllers\CommentController.cs" />
+    <Compile Include="Controllers\ExperienceController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ReplyController.cs" />
@@ -245,6 +246,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Views\Background\" />
     <Folder Include="Views\Comment\" />
+    <Folder Include="Views\Experience\" />
     <Folder Include="Views\Reply\" />
   </ItemGroup>
   <ItemGroup>

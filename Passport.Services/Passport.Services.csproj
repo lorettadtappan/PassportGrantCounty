@@ -56,6 +56,7 @@
   <ItemGroup>
     <Compile Include="BackgroundService.cs" />
     <Compile Include="CommentService.cs" />
+    <Compile Include="ExperienceService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReplyService.cs" />
   </ItemGroup>

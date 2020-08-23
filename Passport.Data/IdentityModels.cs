@@ -33,7 +33,7 @@ namespace Passport.Data
         public DbSet<RoadMap> RoadMap { get; set; }
         public DbSet<Reply> Replies { get; set; }
         public DbSet<Stamp> Stamp { get; set; }
-        public DbSet<Experience> Experience { get; set; }
+        public DbSet<Experience> Experiences { get; set; }
 
         public static ApplicationDbContext Create()
         {
@@ -46,7 +46,7 @@ namespace Passport.Data
             modelBuilder.Entity<Experience>()
                 .Property(b => b._RoadMaps).HasColumnName("RoadMaps");
             modelBuilder.Entity<Background>()
-                .Property(b => b._AdventureLog).HasColumnName("SkillProficiencies");
+                .Property(b => b._AdventureLog).HasColumnName("AdventureLog");
             modelBuilder.Entity<RoadMap>()
             .Property(b => b._ChallengeScoreIncrease).HasColumnName("ChallengeScoreIncrease");
             modelBuilder.Entity<RoadMap>()
