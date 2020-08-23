@@ -111,9 +111,6 @@ namespace PassportGrantCounty.Controllers
                 ExperienceId = detail.ExperienceId,
                 Name = detail.Name,
                 ChallengeScoreIncrease = detail.ChallengeScoreIncrease,
-                RoadMaps = detail.RoadMaps,
-                RoadMapId = _ctx.RoadMaps.Single(e => e.Name == detail.RoadMapName).Id,
-                RoadMaps = new SelectList(_ctx.RoadMaps, "Id", "Name")
             };
             return View(model);
         }
@@ -123,7 +120,7 @@ namespace PassportGrantCounty.Controllers
         public ActionResult Edit(ExperienceUpdateModel model, int experienceId)
         {
             model.RoadMaps = new SelectList(_ctx.RoadMaps, "Id", "Name");
-            if (model.Id != id)
+            if (model.ExperienceId != experienceId)
             {
                 ModelState.AddModelError("", "Id Mismatch");
                 return View(model);

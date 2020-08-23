@@ -30,7 +30,7 @@ namespace Passport.Data
 
         public DbSet<Background> Backgrounds { get; set; }
         public DbSet<Comment> Comments { get; set; }
-        public DbSet<RoadMap> RoadMap { get; set; }
+        public DbSet<RoadMap> RoadMaps { get; set; }
         public DbSet<Reply> Replies { get; set; }
         public DbSet<Stamp> Stamp { get; set; }
         public DbSet<Experience> Experiences { get; set; }
@@ -43,14 +43,10 @@ namespace Passport.Data
         {
             modelBuilder.Entity<Experience>()
                 .Property(b => b._ChallengeScoreIncrease).HasColumnName("ChallengeScoreIncrease");
-            modelBuilder.Entity<Experience>()
-                .Property(b => b._RoadMaps).HasColumnName("RoadMaps");
             modelBuilder.Entity<Background>()
                 .Property(b => b._AdventureLog).HasColumnName("AdventureLog");
             modelBuilder.Entity<RoadMap>()
             .Property(b => b._ChallengeScoreIncrease).HasColumnName("ChallengeScoreIncrease");
-            modelBuilder.Entity<RoadMap>()
-                .Property(b => b._Stamps).HasColumnName("Stamps");
             modelBuilder
                 .Conventions
                 .Remove<PluralizingTableNameConvention>();

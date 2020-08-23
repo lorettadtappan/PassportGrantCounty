@@ -45,6 +45,7 @@
     <Compile Include="ICommentService.cs" />
     <Compile Include="IExperienceService.cs" />
     <Compile Include="IReplyService.cs" />
+    <Compile Include="IRoadMapService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

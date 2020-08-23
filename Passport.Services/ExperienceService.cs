@@ -23,10 +23,7 @@ namespace Passport.Services
             {
                 Name = model.Name,
                 ChallengeScoreIncrease = model.ChallengeScoreIncrease,
-                RoadMaps = model.RoadMaps,
-                Stamps = model.Stamps,
                 RoadMapId = model.RoadMapId,
-                RoadMap = model.RoadMap,
                 Comments = model.Comment,
             };
             _ctx.Experiences.Add(entity);
@@ -50,10 +47,7 @@ namespace Passport.Services
             {
                 entity.Name = model.Name;
                 entity.ChallengeScoreIncrease = model.ChallengeScoreIncrease;
-                entity.RoadMaps = model.RoadMaps;
-                entity.Stamps = model.Stamps;
                 entity.RoadMapId = model.RoadMapId;
-                entity.RoadMap = model.RoadMap;
                 entity.Comments = model.Comment;
             }
             return _ctx.SaveChanges() == 1;
@@ -77,9 +71,6 @@ namespace Passport.Services
                 ExperienceId = entity.ExperienceId,
                 Name = entity.Name,
                 ChallengeScoreIncrease = entity.ChallengeScoreIncrease,
-                RoadMaps = entity.RoadMaps,
-                Stamps = entity.Stamps,
-                RoadMapId = _ctx.RoadMaps.Single(e => e.RoadMapId == entity.RoadMapId).Name,
             };
             return model;
         }
@@ -91,10 +82,7 @@ namespace Passport.Services
             {
                 ExperienceId = entity.ExperienceId,
                 Name = entity.Name,
-                ChallengeScoreIncrease = FormatChallengeScoreIncrease(entity),
-                RoadMaps = entity.RoadMaps,
-                Stamps = entity.Stamps,
-                RoadMapId = _ctx.RoadMaps.Single(e => e.RoadMapId == entity.RoadMapId).Name,
+                ChallengeScoreIncrease = entity.ChallengeScoreIncrease,
             };
             return model;
         }
