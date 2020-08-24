@@ -1,0 +1,50 @@
+﻿@model Passport.Models.StampModels.StampDetailModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>StampDetailModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.StampId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StampId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Explorer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Explorer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StampLevel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StampLevel)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

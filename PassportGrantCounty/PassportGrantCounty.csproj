@@ -246,14 +246,20 @@
     <Content Include="Views\Background\Create.cshtml" />
     <Content Include="Views\Background\Delete.cshtml" />
     <Content Include="Views\Background\Index.cshtml" />
+    <Content Include="Views\Experience\Details.cshtml" />
+    <Content Include="Views\Experience\Index.cshtml" />
+    <Content Include="Views\Experience\Edit.cshtml" />
+    <Content Include="Views\RoadMap\Index.cshtml" />
+    <Content Include="Views\RoadMap\Create.cshtml" />
+    <Content Include="Views\RoadMap\Details.cshtml" />
+    <Content Include="Views\RoadMap\Edit.cshtml" />
+    <Content Include="Views\Stamp\Index.cshtml" />
+    <Content Include="Views\Stamp\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Comment\" />
-    <Folder Include="Views\Experience\" />
     <Folder Include="Views\Reply\" />
-    <Folder Include="Views\RoadMap\" />
-    <Folder Include="Views\Stamp\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
