@@ -77,9 +77,9 @@ namespace PassportGrantCounty.Controllers
             return View(model);
         }
         // GET: Background/Edit/{id}
-        public ActionResult Edit(int id)
+        public ActionResult Edit(int backgroundId)
         {
-            var background = _backgroundService.GetBackgroundById(id);
+            var background = _backgroundService.GetBackgroundById(backgroundId);
             var model = new BackgroundUpdateModel()
             {
                 BackgroundId = background.BackgroundId,
@@ -91,13 +91,13 @@ namespace PassportGrantCounty.Controllers
         // POST: Background/Edit/{id}
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(BackgroundUpdateModel model, int BackgroundId)
+        public ActionResult Edit(BackgroundUpdateModel model, int backgroundId)
         {
             if (!ModelState.IsValid)
             {
                 return View(model);
             }
-            if (model.BackgroundId != BackgroundId)
+            if (model.BackgroundId != backgroundId)
             {
                 ModelState.AddModelError("", "Id Mismatch");
                 return View(model);
@@ -112,17 +112,17 @@ namespace PassportGrantCounty.Controllers
         }
         // POST: Background/Delete/{id}
         [HttpPost]
-        public ActionResult Delete(int itemId)
+        public ActionResult Delete(int backgroundId)
         {
-            _backgroundService.Delete(itemId);
+            _backgroundService.Delete(backgroundId);
             TempData["SaveResult"] = "Background Deleted";
             return RedirectToAction("Index");
         }
 
         // GET: Background/Details/{id}
-        public ActionResult Details(int BackgroundId)
+        public ActionResult Details(int backgroundId)
         {
-            var model = _backgroundService.GetBackgroundById(BackgroundId);
+            var model = _backgroundService.GetBackgroundById(backgroundId);
             return View(model);
         }
     }

@@ -23,10 +23,7 @@ namespace Passport.Data.Entities
             get { return _ChallengeScoreIncrease == null ? null : JsonConvert.DeserializeObject<Dictionary<string, string>>(_ChallengeScoreIncrease); }
             set { _ChallengeScoreIncrease = JsonConvert.SerializeObject(value); }
         }
-        [Required]
-        [ForeignKey("RoadMap")]
-        public int RoadMapId { get; set; }
-        public virtual RoadMap RoadMaps { get; set; }
+        public virtual ICollection<RoadMap> RoadMaps { get; set; }
         public virtual ICollection<Comment> Comments { get; set; }
         public DateTime DateCreated { get; set; }
         public DateTime? LastUpdated { get; set; }

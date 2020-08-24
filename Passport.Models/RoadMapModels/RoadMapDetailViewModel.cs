@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Passport.Data.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -18,8 +19,6 @@ namespace Passport.Models.RoadMapModels
         public bool IsActive { get; set; }
         [Display(Name = "Challenge Score Increase")]
         public Dictionary<string, string> ChallengeScoreIncrease { get; set; }
-        [ForeignKey("Experience")]
-        public int ExperienceId { get; set; }
-        public IEnumerable<SelectListItem> Experiences { get; set; }
+        public virtual ICollection<Experience> Experiences { get; set; }
     }
 }

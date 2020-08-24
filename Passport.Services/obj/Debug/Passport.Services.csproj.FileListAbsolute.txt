@@ -11,12 +11,6 @@ C:\ElevenFifty\PassportGrantCounty\Passport.Services\bin\Debug\Passport.Contract
 C:\ElevenFifty\PassportGrantCounty\Passport.Services\bin\Debug\Passport.Data.dll
 C:\ElevenFifty\PassportGrantCounty\Passport.Services\bin\Debug\Passport.Models.dll
 C:\ElevenFifty\PassportGrantCounty\Passport.Services\bin\Debug\Newtonsoft.Json.dll
-C:\ElevenFifty\PassportGrantCounty\Passport.Services\bin\Debug\System.Web.Mvc.dll
-C:\ElevenFifty\PassportGrantCounty\Passport.Services\bin\Debug\System.Web.WebPages.dll
-C:\ElevenFifty\PassportGrantCounty\Passport.Services\bin\Debug\System.Web.WebPages.Razor.dll
-C:\ElevenFifty\PassportGrantCounty\Passport.Services\bin\Debug\System.Web.Razor.dll
-C:\ElevenFifty\PassportGrantCounty\Passport.Services\bin\Debug\Microsoft.Web.Infrastructure.dll
-C:\ElevenFifty\PassportGrantCounty\Passport.Services\bin\Debug\System.Web.WebPages.Deployment.dll
 C:\ElevenFifty\PassportGrantCounty\Passport.Services\bin\Debug\Passport.Contracts.pdb
 C:\ElevenFifty\PassportGrantCounty\Passport.Services\bin\Debug\Passport.Data.pdb
 C:\ElevenFifty\PassportGrantCounty\Passport.Services\bin\Debug\Passport.Data.dll.config
@@ -26,11 +20,6 @@ C:\ElevenFifty\PassportGrantCounty\Passport.Services\bin\Debug\EntityFramework.S
 C:\ElevenFifty\PassportGrantCounty\Passport.Services\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 C:\ElevenFifty\PassportGrantCounty\Passport.Services\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\ElevenFifty\PassportGrantCounty\Passport.Services\bin\Debug\Newtonsoft.Json.xml
-C:\ElevenFifty\PassportGrantCounty\Passport.Services\bin\Debug\System.Web.Mvc.xml
-C:\ElevenFifty\PassportGrantCounty\Passport.Services\bin\Debug\System.Web.WebPages.xml
-C:\ElevenFifty\PassportGrantCounty\Passport.Services\bin\Debug\System.Web.WebPages.Razor.xml
-C:\ElevenFifty\PassportGrantCounty\Passport.Services\bin\Debug\System.Web.Razor.xml
-C:\ElevenFifty\PassportGrantCounty\Passport.Services\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\ElevenFifty\PassportGrantCounty\Passport.Services\obj\Debug\Passport.Services.csproj.CopyComplete
 C:\ElevenFifty\PassportGrantCounty\Passport.Services\obj\Debug\Passport.Services.dll
 C:\ElevenFifty\PassportGrantCounty\Passport.Services\obj\Debug\Passport.Services.pdb

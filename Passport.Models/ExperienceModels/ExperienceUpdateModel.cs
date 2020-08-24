@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,8 +16,7 @@ namespace Passport.Models.ExperienceModels
         public string Name { get; set; }
         [Display(Name = "Challenge Score Increase")]
         public Dictionary<string, string> ChallengeScoreIncrease { get; set; }
-        public int RoadMapId { get; set; }
-        public IEnumerable<SelectListItem> RoadMaps { get; set; }
+        public virtual ICollection<RoadMap> RoadMaps { get; set; }
         public virtual ICollection<Comment> Comment { get; set; }
     }
 }

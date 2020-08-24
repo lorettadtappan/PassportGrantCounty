@@ -15,6 +15,5 @@ namespace Passport.Models.StampModels
         public string Name { get; set; }
         [Display(Name = "Stamp Level")]
         public int StampLevel { get; set; }
-        public RoadMap RoadMaps { get; set; }
     }
 }

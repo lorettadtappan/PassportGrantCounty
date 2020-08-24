@@ -73,17 +73,7 @@ namespace PassportGrantCounty.Controllers
         // GET: Experience/Create
         public ActionResult Create()
         {
-            var roadMaps = _ctx.RoadMaps.ToList();
-            var dropdownList = new SelectList(roadMaps.Select(e => new SelectListItem
-            {
-                Value = e.RoadMapId.ToString(),
-                Text = e.Name
-            }).ToList(), "Value", "Text");
-            var model = new ExperienceCreateModel
-            {
-                RoadMaps = dropdownList
-            };
-            return View(model);
+            return View();
         }
         // POST: Experience/Create
         [HttpPost]
@@ -119,7 +109,6 @@ namespace PassportGrantCounty.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit(ExperienceUpdateModel model, int experienceId)
         {
-            model.RoadMaps = new SelectList(_ctx.RoadMaps, "Id", "Name");
             if (model.ExperienceId != experienceId)
             {
                 ModelState.AddModelError("", "Id Mismatch");
@@ -127,10 +116,10 @@ namespace PassportGrantCounty.Controllers
             }
             if (_experienceService.Edit(model))
             {
-                TempData["SaveResult"] = "Experience updated";
+                TempData["SaveResult"] = "Experience edited";
                 return RedirectToAction("Index");
             }
-            ModelState.AddModelError("", "Unable to update experience");
+            ModelState.AddModelError("", "Unable to edit experience");
             return View(model);
         }
     }

@@ -25,7 +25,7 @@ namespace Passport.Services
                 Speed = model.Speed,
                 IsActive = model.IsActive,
                 ChallengeScoreIncrease = model.ChallengeScoreIncrease,
-                ExperienceId = model.ExperienceId,
+                Experiences = model.Experiences,
                 Comments = model.Comments,
             };
             _ctx.RoadMaps.Add(entity);
@@ -51,6 +51,7 @@ namespace Passport.Services
                 entity.Speed = model.Speed;
                 entity.IsActive = model.IsActive;
                 entity.ChallengeScoreIncrease = model.ChallengeScoreIncrease;
+                entity.Experiences = model.Experiences;
                 entity.Comments = model.Comments;
             }
             return _ctx.SaveChanges() == 1;
@@ -76,7 +77,7 @@ namespace Passport.Services
                 Speed = entity.Speed,
                 IsActive = entity.IsActive,
                 ChallengeScoreIncrease = entity.ChallengeScoreIncrease,
-                ExperienceId = entity.ExperienceId,
+                Experiences = entity.Experiences,
             };
             return model;
         }
@@ -90,7 +91,7 @@ namespace Passport.Services
                 Speed = entity.Speed,
                 IsActive = entity.IsActive,
                 ChallengeScoreIncrease = entity.ChallengeScoreIncrease,
-                ExperienceId = entity.ExperienceId,
+                Experiences = entity.Experiences,
             };
             return model;
         }

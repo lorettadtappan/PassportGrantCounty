@@ -64,12 +64,21 @@
     <Compile Include="Entities\RoadMap.cs" />
     <Compile Include="Entities\Stamp.cs" />
     <Compile Include="IdentityModels.cs" />
+    <Compile Include="Migrations\202008241105121_changedStampExperienceRoadMap.cs" />
+    <Compile Include="Migrations\202008241105121_changedStampExperienceRoadMap.Designer.cs">
+      <DependentUpon>202008241105121_changedStampExperienceRoadMap.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202008241105121_changedStampExperienceRoadMap.resx">
+      <DependentUpon>202008241105121_changedStampExperienceRoadMap.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

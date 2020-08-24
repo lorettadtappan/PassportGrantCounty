@@ -19,9 +19,7 @@ namespace Passport.Models.RoadMapModels
         public bool IsActive { get; set; }
         [Display(Name = "Challenge Score Increase")]
         public Dictionary<string, string> ChallengeScoreIncrease { get; set; }
-        [ForeignKey("Experience")]
-        public int ExperienceId { get; set; }
-        public IEnumerable<SelectListItem> Experiences { get; set; }
+        public virtual ICollection<Experience> Experiences { get; set; }
         public virtual ICollection<Comment> Comments { get; set; }
     }
 }

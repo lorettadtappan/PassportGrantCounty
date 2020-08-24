@@ -101,7 +101,7 @@ namespace PassportGrantCounty.Controllers
                 Speed = details.Speed,
                 IsActive = details.IsActive,
                 ChallengeScoreIncrease = details.ChallengeScoreIncrease,
-                ExperienceId = details.ExperienceId,
+                Experiences = details.Experiences,
             };
             return View(model);
         }

@@ -18,14 +18,3 @@ C:\ElevenFifty\PassportGrantCounty\Passport.Contracts\obj\Debug\Passport.Contrac
 C:\ElevenFifty\PassportGrantCounty\Passport.Contracts\obj\Debug\Passport.Contracts.csproj.CopyComplete
 C:\ElevenFifty\PassportGrantCounty\Passport.Contracts\obj\Debug\Passport.Contracts.dll
 C:\ElevenFifty\PassportGrantCounty\Passport.Contracts\obj\Debug\Passport.Contracts.pdb
-C:\ElevenFifty\PassportGrantCounty\Passport.Contracts\bin\Debug\System.Web.Mvc.dll
-C:\ElevenFifty\PassportGrantCounty\Passport.Contracts\bin\Debug\System.Web.WebPages.dll
-C:\ElevenFifty\PassportGrantCounty\Passport.Contracts\bin\Debug\System.Web.WebPages.Razor.dll
-C:\ElevenFifty\PassportGrantCounty\Passport.Contracts\bin\Debug\System.Web.Razor.dll
-C:\ElevenFifty\PassportGrantCounty\Passport.Contracts\bin\Debug\Microsoft.Web.Infrastructure.dll
-C:\ElevenFifty\PassportGrantCounty\Passport.Contracts\bin\Debug\System.Web.WebPages.Deployment.dll
-C:\ElevenFifty\PassportGrantCounty\Passport.Contracts\bin\Debug\System.Web.Mvc.xml
-C:\ElevenFifty\PassportGrantCounty\Passport.Contracts\bin\Debug\System.Web.WebPages.xml
-C:\ElevenFifty\PassportGrantCounty\Passport.Contracts\bin\Debug\System.Web.WebPages.Razor.xml
-C:\ElevenFifty\PassportGrantCounty\Passport.Contracts\bin\Debug\System.Web.Razor.xml
-C:\ElevenFifty\PassportGrantCounty\Passport.Contracts\bin\Debug\System.Web.WebPages.Deployment.xml

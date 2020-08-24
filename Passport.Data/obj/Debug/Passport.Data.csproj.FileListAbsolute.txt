@@ -11,8 +11,10 @@ C:\ElevenFifty\PassportGrantCounty\Passport.Data\bin\Debug\EntityFramework.SqlSe
 C:\ElevenFifty\PassportGrantCounty\Passport.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 C:\ElevenFifty\PassportGrantCounty\Passport.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\ElevenFifty\PassportGrantCounty\Passport.Data\bin\Debug\Newtonsoft.Json.xml
-C:\ElevenFifty\PassportGrantCounty\Passport.Data\obj\Debug\Passport.Data.csprojAssemblyReference.cache
 C:\ElevenFifty\PassportGrantCounty\Passport.Data\obj\Debug\Passport.Data.csproj.CoreCompileInputs.cache
 C:\ElevenFifty\PassportGrantCounty\Passport.Data\obj\Debug\Passport.Data.csproj.CopyComplete
 C:\ElevenFifty\PassportGrantCounty\Passport.Data\obj\Debug\Passport.Data.dll
 C:\ElevenFifty\PassportGrantCounty\Passport.Data\obj\Debug\Passport.Data.pdb
+C:\ElevenFifty\PassportGrantCounty\Passport.Data\obj\Debug\Passport.Data.csprojAssemblyReference.cache
+C:\ElevenFifty\PassportGrantCounty\Passport.Data\obj\Debug\Passport.Data.Migrations.changedStampExperienceRoadMap.resources
+C:\ElevenFifty\PassportGrantCounty\Passport.Data\obj\Debug\Passport.Data.csproj.GenerateResource.cache

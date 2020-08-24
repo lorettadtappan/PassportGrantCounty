@@ -27,10 +27,7 @@ namespace Passport.Data.Entities
             get { return _ChallengeScoreIncrease == null ? null : JsonConvert.DeserializeObject<Dictionary<string, string>>(_ChallengeScoreIncrease); }
             set { _ChallengeScoreIncrease = JsonConvert.SerializeObject(value); }
         }
-        [Required]
-        [ForeignKey("Experience")]
-        public int ExperienceId { get; set; }
-        public virtual Experience Experiences { get; set; }
+        public virtual ICollection<Experience> Experiences { get; set; }
         public virtual ICollection<Comment> Comments { get; set; }
         public DateTime DateCreated { get; set; }
         public DateTime? LastUpdated { get; set; }

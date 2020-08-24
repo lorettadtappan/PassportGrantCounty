@@ -23,7 +23,7 @@ namespace Passport.Services
             {
                 Name = model.Name,
                 ChallengeScoreIncrease = model.ChallengeScoreIncrease,
-                RoadMapId = model.RoadMapId,
+                RoadMaps = model.RoadMaps,
                 Comments = model.Comment,
             };
             _ctx.Experiences.Add(entity);
@@ -47,7 +47,7 @@ namespace Passport.Services
             {
                 entity.Name = model.Name;
                 entity.ChallengeScoreIncrease = model.ChallengeScoreIncrease;
-                entity.RoadMapId = model.RoadMapId;
+                entity.RoadMaps = model.RoadMaps;
                 entity.Comments = model.Comment;
             }
             return _ctx.SaveChanges() == 1;

@@ -19,10 +19,6 @@ namespace Passport.Data.Entities
         public string Name { get; set; }
         [Required]
         public int StampLevel { get; set; }
-        [Required]
-        [ForeignKey("RoadMap")]
-        public int RoadMapId { get; set; }
-        public virtual RoadMap RoadMaps { get; set; }
         public virtual ICollection<Comment> Comments { get; set; }
         public DateTime DateCreated { get; set; }
         public DateTime? LastUpdated { get; set; }
