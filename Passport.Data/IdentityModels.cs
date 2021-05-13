@@ -70,4 +70,6 @@ namespace Passport.Data
             HasKey(iur => iur.UserId);
         }
     }
+
+
 }
