@@ -179,7 +179,6 @@ C:\Users\ltappan\source\repos\PassportGrantCounty\PassportGrantCounty\bin\Micros
 C:\Users\ltappan\source\repos\PassportGrantCounty\PassportGrantCounty\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\ltappan\source\repos\PassportGrantCounty\PassportGrantCounty\bin\Microsoft.Owin.dll
 C:\Users\ltappan\source\repos\PassportGrantCounty\PassportGrantCounty\bin\Microsoft.Owin.Host.SystemWeb.dll
-C:\Users\ltappan\source\repos\PassportGrantCounty\PassportGrantCounty\bin\Microsoft.Owin.Security.Cookies.dll
 C:\Users\ltappan\source\repos\PassportGrantCounty\PassportGrantCounty\bin\Microsoft.Owin.Security.dll
 C:\Users\ltappan\source\repos\PassportGrantCounty\PassportGrantCounty\bin\Microsoft.Owin.Security.Facebook.dll
 C:\Users\ltappan\source\repos\PassportGrantCounty\PassportGrantCounty\bin\Microsoft.Owin.Security.Google.dll

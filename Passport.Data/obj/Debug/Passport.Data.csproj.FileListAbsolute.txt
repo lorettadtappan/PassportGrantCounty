@@ -38,3 +38,14 @@ C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\obj\Debug\Passpo
 C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\obj\Debug\Passport.Data.csproj.CopyComplete
 C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\obj\Debug\Passport.Data.dll
 C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\obj\Debug\Passport.Data.pdb
+C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\bin\Debug\Microsoft.Owin.dll
+C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\bin\Debug\Owin.dll
+C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\bin\Debug\Microsoft.Owin.xml
+C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\bin\Debug\Microsoft.Owin.Security.OAuth.xml

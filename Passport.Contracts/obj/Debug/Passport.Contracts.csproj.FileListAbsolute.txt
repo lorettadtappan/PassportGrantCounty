@@ -38,3 +38,5 @@ C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Contracts\obj\Debug\P
 C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Contracts\obj\Debug\Passport.Contracts.csproj.CopyComplete
 C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Contracts\obj\Debug\Passport.Contracts.dll
 C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Contracts\obj\Debug\Passport.Contracts.pdb
+C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Contracts\bin\Debug\Passport.Contracts.dll.config
+C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Contracts\bin\Debug\Passport.Models.dll.config

@@ -60,3 +60,4 @@ C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Models\obj\Debug\Pass
 C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Models\obj\Debug\Passport.Models.csproj.CopyComplete
 C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Models\obj\Debug\Passport.Models.dll
 C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Models\obj\Debug\Passport.Models.pdb
+C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Models\bin\Debug\Passport.Models.dll.config
