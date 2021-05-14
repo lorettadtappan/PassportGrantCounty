@@ -2,74 +2,50 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="wrapper">
-    <div class="top">
-        <div class="search-header">
-            <h1>Passport Grant County</h1>
-            <p>Search the Road Map or Experiences to choose your first adventure!</p>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron home">
+    <h1 id="homeTitle">Passport Grant County</h1>
+    <p>Search the Road Map or Experiences to choose your first adventure!</p>
+    <div class="row justify-content-center align-items-center startRoadMapContainer">
+        <button type="button" class="btn btn-primary btn-lg" id="startRoadMap">
+            @{
+                if (User.Identity.IsAuthenticated)
+                {
+                    @Html.ActionLink("Start a Road Map", "Index", "MyRoadMaps")
+                }
+                else
+                {
+                    @Html.ActionLink("Start a Road Map", "Register", "Account")
+                }
+            }
+        </button>
+    </div>
+
+    <h5 id="tagline">You choose when and how to complete your road maps!</h5>
+</div>
+
+<div class="container">
+    <div class="row justify-content-around">
+        <div class="col-lg-5 col-md-6 roadMapsContainer">
+            <a href="/RoadMaps">
+                <div class="category roadMaps">
+                    <h2>Road Maps</h2>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-5 col-md-6 experiencesContainer">
+            <a href="/Experiences">
+                <div class="category experiences">
+                    <h2>Experiences</h2>
+                </div>
+            </a>
         </div>
     </div>
 </div>
 
-<!-- PRELOADER -->
-<div id="preloader"><img src="images/logo.png" alt=""></div>
-
-
-<!-- MAIN NAV -->
-<a id="main-nav" href="#sidr"><span class="flaticon-menu9"></span></a>
-<div id="sidr" class="sidr">
-
-    <!-- MAIN NAV LOGO -->
-    <a href="#" id="menu-logo"><img src="images/menu-logo.png" alt=""></a>
-
-    <!-- MAIN NAV LINKS -->
-    <ul>
-        <li>
-            <a href="#Home"><span class="icons flaticon-house3"></span>Home</a>
-        </li>
-        <li>
-            <a href="#RoadMap"><span class="icons flaticon-drawer1"></span>Road Map</a>
-        </li>
-        <li>
-            <a href="#Experiences"><span class="icons flaticon-cursor7"></span>Experiences</a>
-        </li>
-        <li>
-            <a href="#Stamps"><span class="icons flaticon-key9"></span>Stamps</a>
-        </li>
-        <li>
-            <a href="#Resources"><span class="icons flaticon-comment2"></span>Resources</a>
-        </li>
-        <li>
-            <a href="#Contact"><span class="icons flaticon-small72"></span>Contact</a>
-        </li>
-    </ul>
-    <!-- END MAIN NAV LINKS -->
-</div>
-<!-- END MAIN NAV -->
-<!-- PAGE LOGO -->
-<div class="wrap">
-    <div id="logo">
-        <a href="#"><img src="images/logo.png" alt=""> </a>
-    </div>
-</div>
-<!-- END PAGE LOGO -->
-<!-- LANDING PAGE CONTENT -->
-<div id="fullpage">
-
-    <!-- RIGHT HAND & PHONE MOCK-UP IMAGES -->
-    <div class="wrap">
-        <div class="section-image">
-            <!-- Home IMAGE -->
-            <!-- RoadMap IMAGE -->
-            <!-- Experiences IMAGE -->
-            <!-- Stamps IMAGE -->
-            <!-- Resources IMAGE -->
-            <!-- Contact IMAGE -->
-        </div>
-        <div id="hand"></div>
-    </div>
-</div>
-<!-- END RIGHT HAND & PHONE MOCK-UP -->
 <!-- SECTION HOME -->
 <div class="section " id="section0">
     <div class="wrap">
@@ -85,390 +61,61 @@
     </div>
 </div>
 <!-- END SECTION HOME -->
-<!-- SECTION FEATURES -->
-<div class="section " id="section1">
+
+<!-- SECTION CONTACT -->
+<div class="section" id="section8">
     <div class="wrap">
         <div class="box">
-            <!-- SECTION FEATURES CONTENT -->
-            <h2><strong>Road Map</strong></h2>
-            <p>Pick a category, and journey on!</p>
-            <ul class="features">
-                <li><a class="tooltip" href="#">A Breath of Fresh Air<span class="tooltip-content"><span class="tooltip-text"><span class="tooltip-inner">A Breath of Fresh Air</span></span></span></a> </li>
-                <li><a class="tooltip" href="#">Adventurama<span class="tooltip-content"><span class="tooltip-text"><span class="tooltip-inner">Adventurama</span></span></span></a> </li>
-                <li><a class="tooltip" href="#">All About Me<span class="tooltip-content"><span class="tooltip-text"><span class="tooltip-inner">All About Me</span></span></span></a> </li>
-                <li><a class="tooltip" href="#">Animal Planet<span class="tooltip-content"><span class="tooltip-text"><span class="tooltip-inner">Animal Planet</span></span></span></a> </li>
-                <li><a class="tooltip" href="#">Back to the Future<span class="tooltip-content"><span class="tooltip-text"><span class="tooltip-inner">Back to the Future</span></span></span></a> </li>
-                <li><a class="tooltip" href="#">Be a Foodie<span class="tooltip-content"><span class="tooltip-text"><span class="tooltip-inner">Be a Foodie</span></span></span></a> </li>
-                <li><a class="tooltip" href="#">Be a Good Sport<span class="tooltip-content"><span class="tooltip-text"><span class="tooltip-inner">Be a Good Sport</span></span></span></a> </li>
-                <li><a class="tooltip" href="#">Be an Artisan<span class="tooltip-content"><span class="tooltip-text"><span class="tooltip-inner">Be an Artisan</span></span></span></a> </li>
-                <li><a class="tooltip" href="#">Celebrate Good Times<span class="tooltip-content"><span class="tooltip-text"><span class="tooltip-inner">Celebrate Good Times</span></span></span></a> </li>
-                <li><a class="tooltip" href="#">Cultures and Generations<span class="tooltip-content"><span class="tooltip-text"><span class="tooltip-inner">Cultures and Generations</span></span></span></a> </li>
-                <li><a class="tooltip" href="#">Friends Forever<span class="tooltip-content"><span class="tooltip-text"><span class="tooltip-inner">Friends Forever</span></span></span></a> </li>
-                <li><a class="tooltip" href="#">Fun and Games<span class="tooltip-content"><span class="tooltip-text"><span class="tooltip-inner">Fun and Games</span></span></span></a> </li>
-            </ul>
-            <ul class="features">
-                <li><a class="tooltip" href="#">Give A Little Bit<span class="tooltip-content"><span class="tooltip-text"><span class="tooltip-inner">Give A Little Bit</span></span></span></a> </li>
-                <li><a class="tooltip" href="#">Grown-up Stuff<span class="tooltip-content"><span class="tooltip-text"><span class="tooltip-inner">Grown-up Stuff</span></span></span></a> </li>
-                <li><a class="tooltip" href="#">Healthy, Wealthy, and Wise<span class="tooltip-content"><span class="tooltip-text"><span class="tooltip-inner">Healthy, Wealthy, and Wise</span></span></span></a> </li>
-                <li><a class="tooltip" href="#">It's a Wonderful Life<span class="tooltip-content"><span class="tooltip-text"><span class="tooltip-inner">It's a Wonderful Life</span></span></span></a> </li>
-                <li><a class="tooltip" href="#">Nice to Meet Ya!<span class="tooltip-content"><span class="tooltip-text"><span class="tooltip-inner">Nice to Meet Ya!</span></span></span></a> </li>
-                <li><a class="tooltip" href="#">Oh, The Places You'll Go<span class="tooltip-content"><span class="tooltip-text"><span class="tooltip-inner">Oh, The Places You'll Go</span></span></span></a> </li>
-                <li><a class="tooltip" href="#">Science Central<span class="tooltip-content"><span class="tooltip-text"><span class="tooltip-inner">Science Central</span></span></span></a> </li>
-                <li><a class="tooltip" href="#">So Random<span class="tooltip-content"><span class="tooltip-text"><span class="tooltip-inner">So Random</span></span></span></a> </li>
-                <li><a class="tooltip" href="#">So You Think You Can Dance<span class="tooltip-content"><span class="tooltip-text"><span class="tooltip-inner">So You Think You Can Dance</span></span></span></a> </li>
-                <li><a class="tooltip" href="#">Take Advantage of this Photo Op<span class="tooltip-content"><span class="tooltip-text"><span class="tooltip-inner">Take Advantage of this Photo Op</span></span></span></a> </li>
-                <li><a class="tooltip" href="#">The Big Screen<span class="tooltip-content"><span class="tooltip-text"><span class="tooltip-inner">The Big Screen</span></span></span></a> </li>
-                <li><a class="tooltip" href="#">We Are Family<span class="tooltip-content"><span class="tooltip-text"><span class="tooltip-inner">We Are Family</span></span></span></a> </li>
-            </ul>
-            <!-- END SECTION FEATURES CONTENT -->
-        </div>
-    </div>
-</div>
-<!-- END SECTION FEATURES -->
-<!-- SECTION ABOUT -->
-<div class="section" id="section2">
-    <div class="wrap">
-        <div class="box">
-            <!-- SECTION ABOUT CONTENT -->
-            <h2><strong>How to Play</strong></h2>
-            <div class="tabs tabs-style-linemove">
-                <!-- TABS LINKS -->
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#section-linemove-1"><span> Be creative.</span></a>
-                        </li>
-                        <li>
-                            <a href="#section-linemove-2"><span> Be patient.</span></a>
-                        </li>
-                        <li>
-                            <a href="#section-linemove-3"><span> Be brave.</span></a>
-                        </li>
-                        <li>
-                            <a href="#section-linemove-4"><span> Be prepared.</span></a>
-                        </li>
-                    </ul>
-                </nav>
-                <!-- END TABS LINKS -->
-                <!-- TABS CONTENT -->
-                <div class="content-wrap">
-
-                    <!-- TAB 1 -->
-                    <section id="section-linemove-1">
-                        <h4>You're in control.</h4>
-                        <p>It may take a bit of ingenuity to complete some of the things. Take the opportunities as they arise.</p>
-                    </section>
-
-                    <!-- TAB 2 -->
-                    <section id="section-linemove-2">
-                        <h4>You set the pace.</h4>
-                        <p>Some things cannot be completed until later in your life. If at first you don't succeed, keep trying. Some things may take a few attempts to complete.</p>
-                    </section>
-
-                    <!-- TAB 3 -->
-                    <section id="section-linemove-3">
-                        <h4>You can do this!</h4>
-                        <p>Some of the things cannot be accomplished without a little courage. You'll have to take risks. Push yourself. Do things you would normally avoid doing.</p>
-                    </section>
-
-                    <!-- TAB 4 -->
-                    <section id="section-linemove-4">
-                        <h4>You have the tools!</h4>
-                        <p>Download the app so you always have the ability to document your adventures. Experiences may present itself at an unexpected moment, and it's best to record as soon as you've completed an item before you forget the details.</p>
-                    </section>
-                </div>
-                <!-- END TABS CONTENT -->
-                <!-- END SECTION ABOUT -->
-            </div>
-        </div>
-    </div>
-</div>
-<!-- END SECTION ABOUT -->
-<!-- SECTION EXPERIENCES -->
-<div class="section" id="section3">
-    <div class="wrap">
-        <div class="fp-tableCell clients-content">
-            <div class="box">
-                <!-- SECTION EXPERIENCES CONTENT -->
-                <h2><strong>Experience</strong></h2>
-
-                <!-- CLIENT FEEDBACK 1 -->
-                <div class="slide" data-anchor="slide1">
-                    <p>Blow bubbles</p>
-                    <p>Build a cardboard boat and see how far you sail before you sink (better yet, make this a contest with friends)</p>
-                    <p>Build a snowman in the winter</p>
-                    <p>Catch a fish</p>
-                    <p>Catch butterflies</p>
-                    <p>Experience a day with the temperature above 100 degrees F </p>
-                    <p>Experience a day with the temperature below zero degrees F</p>
-                    <p>Float on a lazy river</p>
-                    <p>Go down a water slide</p>
-                    <p>Go fishing</p>
-                    <p>Go sledding</p>
-                    <p>Go to summer camp as a camper or a camp counselor</p>
-                    <p>Go tubing</p>
-                    <p>Go water skiing</p>
-                    <p>Learn how to or teach someone to swim</p>
-                    <p>Learn how to remove a tick</p>
-                    <p>Learn how to use a compass</p>
-                    <p>Make a snow angel</p>
-                    <p>Play in a wave pool</p>
-                    <p>Play on a slip and slide</p>
-                    <p>Ride a bike or take a walk on the Cardinal Greenway</p>
-                    <p>Ride a horse</p>
-                    <p>Ride a zipline</p>
-                    <p>Roll down a hill</p>
-                    <p>Saw a log in half</p>
-                    <p>Shoot targets</p>
-                    <p>Sit in a hot tub, when it's snowing outside</p>
-                    <p>Slide down a big twisty slide</p>
-                    <p>Swim in a lake</p>
-                    <p>Swing as high as you can on on a playground swing</p>
-                    <p>Swing from a rope into a lake</p>
-                    <p>Take a canoe trip</p>
-                    <p>Take a nighttime hike with a flashlight</p>
-                    <p>Walk on a swinging bridge</p>
-                    <p>Walk on the Sweetser Switch Trail</p>
-                    <p>Watch the sun rise</p>
-                    <p>Watch the sun set</p>
-                    <p>
-                        <span class="client-name"> <strong> A Breath of Fresh Air</strong></span> <span class="client-stars">
-                            <span class="icon flaticon-little27"></span> <span class="icon flaticon-little27"></span> <span class="icon flaticon-half3"></span> <span class="icon flaticon-fivepointed"></span> <span class="icon flaticon-fivepointed"></span>
-                        </span>
-                    </p>
-                </div>
-
-                <!-- CLIENT FEEDBACK 2 -->
-                <div class="slide" data-anchor="slide2">
-                    <p>Attend a car race</p>
-                    <p>Bungee jump</p>
-                    <p>Climb to the top of a mountain</p>
-                    <p>Complete a ropes course</p>
-                    <p>Drive a boat</p>
-                    <p>Drive a car</p>
-                    <p>Drive a go-kart</p>
-                    <p>Experience an earthquake</p>
-                    <p>Go parachuting</p>
-                    <p>Go to an amusement park</p>
-                    <p>Go to the circus</p>
-                    <p>Go to the top of the Eiffel Tower</p>
-                    <p>Learn to drive a stick shift</p>
-                    <p>Participate in a flash mob</p>
-                    <p>Ride a 4-wheeler</p>
-                    <p>Ride a mechanical bull</p>
-                    <p>Ride a paddle boat</p>
-                    <p>Ride a roller coaster</p>
-                    <p>Ride a Segway</p>
-                    <p>Ride in a boat</p>
-                    <p>Ride in a convertible</p>
-                    <p>Ride in a helicopter</p>
-                    <p>Ride in a hot air balloon</p>
-                    <p>Ride in an airplane</p>
-                    <p>Ride on a motorcycle</p>
-                    <p>Ride on a tractor</p>
-                    <p>Ride on a train</p>
-                    <p>Shoot a bow and arrow</p>
-                    <p>Swing from a flying trapeze</p>
-                    <p>
-                        <span class="client-name"> <strong> Adventurama</strong></span> <span class="client-stars">
-                            <span class="icon flaticon-little27"></span> <span class="icon flaticon-little27"></span> <span class="icon flaticon-half3"></span> <span class="icon flaticon-fivepointed"></span> <span class="icon flaticon-fivepointed"></span>
-                        </span>
-                    </p>
-                </div>
-
-                <!-- CLIENT FEEDBACK 3 -->
-                <div class="slide" data-anchor="slide3">
-                    <p>Be on the radio</p>
-                    <p>Be on TV</p>
-                    <p>Collect postcards from 10 different countries that you'd like to visit (http://postcrossing com)</p>
-                    <p>Complete a personality profile</p>
-                    <p>Create a collection of something you love and keep adding to it</p>
-                    <p>Create a quiet place in your home to do your homework</p>
-                    <p>Decorate or rearrange your room exactly like you want it</p>
-                    <p>Enter a contest</p>
-                    <p>Find your favorite inspirational quote, write it down, and post it where you can read it every day</p>
-                    <p>Get your name in the newspaper</p>
-                    <p>Learn how to take compliments</p>
-                    <p>Make a list of 100 things to do after high school</p>
-                    <p>Make a list of 5 things you are good at and share it with an adult you look up to</p>
-                    <p>Make a list of 5 things you would like to learn more about and share with an adult you look up to</p>
-                    <p>Make the front page of the newspaper</p>
-                    <p>Wear a jersey with your name on the back</p>
-                    <p>Work hard enough to receive a special certificate or ribbon</p>
-                    <p>Work hard enough to receive a special trophy</p>
-                    <p>Write a mission statement for your life</p>
-                    <p>Write out a bucket list of 25 things you want to do before you're 100</p>
-                    <p>
-                        <span class="client-name"> <strong> All About Me</strong></span> <span class="client-stars">
-                            <span class="icon flaticon-little27"></span> <span class="icon flaticon-little27"></span> <span class="icon flaticon-half3"></span> <span class="icon flaticon-fivepointed"></span> <span class="icon flaticon-fivepointed"></span>
-                        </span>
-                    </p>
-                </div>
-
-                <!-- CLIENT FEEDBACK 4 -->
-                <div class="slide" data-anchor="slide4">
-                    <p>Catch a frog</p>
-                    <p>Count the goldfish in a fountain or acquarium at a pet store</p>
-                    <p>Dissect a frog</p>
-                    <p>Feed a giraffe</p>
-                    <p>Feed some ducks</p>
-                    <p>Get a pet</p>
-                    <p>Give a dog a bath</p>
-                    <p>Go to a petting zoo</p>
-                    <p>Hold a baby chick</p>
-                    <p>Pet a donkey</p>
-                    <p>Pet the animals at the 4-H fair</p>
-                    <p>Play fetch with a dog</p>
-                    <p>Ride an elephant</p>
-                    <p>See a dolphin jump out of the water</p>
-                    <p>Sheer a sheep</p>
-                    <p>Stand on a bridge and throw bread to the ducks/geese</p>
-                    <p>Swim with dolphins</p>
-                    <p>Take care of a pet for an entire week</p>
-                    <p>Teach a dog a trick</p>
-                    <p>Visit the pets at a pet store</p>
-                    <p>Watch an animal being born</p>
-                    <p>
-                        <span class="client-name"> <strong> Animal Planet</strong></span> <span class="client-stars">
-                            <span class="icon flaticon-little27"></span> <span class="icon flaticon-little27"></span> <span class="icon flaticon-half3"></span> <span class="icon flaticon-fivepointed"></span> <span class="icon flaticon-fivepointed"></span>
-                        </span>
-                    </p>
-                </div>
-
-                <!-- CLIENT FEEDBACK 5 -->
-                <div class="slide" data-anchor="slide5">
-                    <p>Apply for financial aid for college</p>
-                    <p>Apply to a college (and maybe even graduate school)</p>
-                    <p>Ask 25 adults what their very first job was that they ever got paid to do and find out how much they got paid</p>
-                    <p>Ask a small business owner why they started their business</p>
-                    <p>Ask an adult you know how they chose the career they are in</p>
-                    <p>Create a new invention and show it to someone</p>
-                    <p>Create a professional email account to use for college or jobs</p>
-                    <p>Create a resume</p>
-                    <p>Graduate from high school and/or college</p>
-                    <p>Job-shadow someone in a career you're interested in</p>
-                    <p>Learn about the military admissions process</p>
-                    <p>Make a Post-High School (or college) Plan - Plan A</p>
-                    <p>Make a Post-High School (or college) Plan - Plan B (in case Plan A doesn't work out)</p>
-                    <p>Meet with a college admissions officer</p>
-                    <p>Observe a college class</p>
-                    <p>Spend 30 minutes on www triptocollege.org learning about college and careers in Indiana</p>
-                    <p>Take the SAT or ACT; MCAT or GMAT…you get the idea</p>
-                    <p>Tell your favorite relative what you want to be and why; especially if they inspired you</p>
-                    <p>Visit IndianaCollegeCostEstimator.com or talk to your school counselor to learn about paying for college</p>
-                    <p>
-                        <span class="client-name"> <strong> Back to the Future</strong></span> <span class="client-stars">
-                            <span class="icon flaticon-little27"></span> <span class="icon flaticon-little27"></span> <span class="icon flaticon-half3"></span> <span class="icon flaticon-fivepointed"></span> <span class="icon flaticon-fivepointed"></span>
-                        </span>
-                    </p>
-                </div>
-
-                <!-- END SECTION EXPERIENCES CONTENT-->
-            </div>
-        </div>
-    </div>
-    <!-- END SECTION EXPERIENCES -->
-    <!-- SECTION STAMPS -->
-    <div class="section" id="section4">
-        <div class="wrap">
-            <div class="box">
-                <div class="fp-tableCell screenshots-content">
-                    <!-- SECTION STAMPS CONTENT -->
-                    <h2>Stamps</h2>
-                    <ul class="features">
-                        <li><a class="tooltip"><span class="icon flaticon-camera19"></span> Present your app with AppSperia screenshots</a> </li>
-                        <li><a class="tooltip"><span class="icon flaticon-arrow96"></span> Change images using side arrows or caption bullets</a> </li>
-                        <li><a class="tooltip"><span class="icon flaticon-laptop3"></span> Navigate using keyboard arrows to change screenshots</a> </li>
-                    </ul>
-                    <!-- END SECTION STAMPS CONTENT -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- END SECTION STAMPS -->
-    <!-- SECTION DOWNLOAD -->
-    <div class="section" id="section6" data-anchor="Download">
-        <div class="wrap">
-            <div class="box">
-                <!-- SECTION DOWNLOAD CONTENT-->
-                <h2><strong>Download</strong> the app</h2>
-                <p>Now available on the App Store and Play Store!</p>
-
-                <!-- DOWNLOAD APPSTORE-->
-                <a href="#" class="simple-button appstore-button"><span class="icon appstore"></span>App Store</a>
-                <!-- DOWNLOAD PLAYSTORE-->
-                <a href="#" class="simple-button playstore-button"><span class="icon playstore"></span>Play Store</a>
-
-                <!-- END SECTION DOWNLOAD -->
-            </div>
-        </div>
-    </div>
-    <!-- END SECTION DOWNLOAD -->
-    <!-- SECTION CONTACT -->
-    <div class="section" id="section8">
-        <div class="wrap">
-            <div class="box">
-                <!-- SECTION CONTACT CONTENT-->
-                <h2><strong>Get</strong> in touch</h2>
-                <ul class="features">
-                    <li><a class="tooltip" href="#"><span class="icon flaticon-telephone1"></span> Call Us now<span class="tooltip-content"><span class="tooltip-text"><span class="tooltip-inner"><span class="icon flaticon-telephone1"></span>Support: 765-662-0065 <br>Questions: 765-662-0065 <br>Recommendations: 765-662-0065 </span></span></span></a> </li>
-                    <li>
-                        <span class="tooltip">
-                            <span class="icon flaticon-map5"></span>See our location<span class="tooltip-content">
-                                <span class="tooltip-text">
-                                    <span class="tooltip-inner">
-                                        <span class="icon flaticon-map5"></span>505 W Third St., Marion, IN 46952
-                                        <br><a href="https://www.google.com/maps" target="_blank">View Map</a>
-                                    </span>
+            <!-- SECTION CONTACT CONTENT-->
+            <h2><strong>Get</strong> in touch</h2>
+                    <span class="tooltip">
+                        <span class="icon flaticon-map5"></span>See our location<span class="tooltip-content">
+                            <span class="tooltip-text">
+                                <span class="tooltip-inner">
+                                    <span class="icon flaticon-map5"></span>505 W Third St., Marion, IN 46952
+                                    <br><a href="https://www.google.com/maps" target="_blank">View Map</a>
                                 </span>
                             </span>
                         </span>
-                    </li>
-                </ul>
-                <ul class="features">
-                    <li>
-                        <span class="tooltip">
-                            <span class="icon flaticon-cursor7"></span>Official Website <span class="tooltip-content">
-                                <span class="tooltip-text">
-                                    <span class="tooltip-inner">
-                                        <span class="icon flaticon-cursor7"></span>
-                                        <br> <a href="http://thrivinggrantcounty.com" target="_blank">www.thrivinggrantcounty.com</a>
-                                    </span>
+                    </span>
+                    <span class="tooltip">
+                        <span class="icon flaticon-cursor7"></span>Official Website <span class="tooltip-content">
+                            <span class="tooltip-text">
+                                <span class="tooltip-inner">
+                                    <span class="icon flaticon-cursor7"></span>
+                                    <br> <a href="http://thrivinggrantcounty.com" target="_blank">www.thrivinggrantcounty.com</a>
                                 </span>
                             </span>
                         </span>
-                    </li>
-                    <li><a class="tooltip" href="#"><span class="icon flaticon-mail9"></span> Send Email<span class="tooltip-content"><span class="tooltip-text"><span class="tooltip-inner"><span class="icon flaticon-mail9"></span>contact@mail.com<br>office@mail.com<br>support@mail.com</span></span></span></a> </li>
-                </ul>
+                    </span>
+                    <a class="tooltip" href="#"><span class="icon flaticon-mail9"></span> Send Email<span class="tooltip-content"><span class="tooltip-text"><span class="tooltip-inner"><span class="icon flaticon-mail9"></span>contact@mail.com<br>office@mail.com<br>support@mail.com</span></span></span></a>
 
-                <!-- SECTION CONTACT FORM-->
-                <form role="form" method="post" id="contact-form">
-                    <input type="text" placeholder="Name" name="Name" id="Name" required>
-                    <input type="email" placeholder="Email" name="Email" id="Email" required>
-                    <input type="text" placeholder="Phone" name="Phone" id="Phone">
-                    <input type="text" placeholder="Subject" name="Subject" id="Subject">
-                    <textarea placeholder="Message" name="Message" id="Message" required></textarea>
-                    <button type="submit" id="submit">Send</button>
-                    <div id="success"></div>
-                </form>
-                <!-- END SECTION CONTACT -->
-            </div>
+            <!-- SECTION CONTACT FORM-->
+            <form role="form" method="post" id="contact-form">
+                <input type="text" placeholder="Name" name="Name" id="Name" required>
+                <input type="email" placeholder="Email" name="Email" id="Email" required>
+                <input type="text" placeholder="Phone" name="Phone" id="Phone">
+                <input type="text" placeholder="Subject" name="Subject" id="Subject">
+                <textarea placeholder="Message" name="Message" id="Message" required></textarea>
+                <button type="submit" id="submit">Send</button>
+                <div id="success"></div>
+            </form>
+            <!-- END SECTION CONTACT -->
         </div>
     </div>
+</div>
 </div>
 <!-- SECTION CONTACT -->
 <!-- SOCIAL ICONS -->
 <div class="wrap">
-    <div id="social-icons">
-        <ul>
-            <li><a href=""><i class="flaticon-facebook6"></i></a> </li>
-            <li><a href=""><i class="flaticon-social19"></i></a> </li>
-            <li><a href=""><i class="flaticon-google16"></i></a> </li>
-            <li><a href=""><i class="flaticon-social40"></i></a> </li>
-            <li><a href=""><i class="flaticon-social7"></i></a> </li>
-            <li><a href=""><i class="flaticon-logo3"></i></a> </li>
-        </ul>
-    </div>
+<div id="social-icons">
+        <a href=""><i class="flaticon-facebook6"></i></a>
+        <a href=""><i class="flaticon-social19"></i></a>
+        <a href=""><i class="flaticon-google16"></i></a>
+        <a href=""><i class="flaticon-social40"></i></a>
+        <a href=""><i class="flaticon-social7"></i></a>
+        <a href=""><i class="flaticon-logo3"></i></a>
+</div>
 </div>
 <!-- END SOCIAL ICONS -->
 <!-- SCRIPTS -->
