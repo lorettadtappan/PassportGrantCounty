@@ -3,12 +3,11 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
-using Microsoft.Owin.Security.Google;
 using Owin;
 using Passport.Data;
-using PassportGrantCounty;
+using PassportGrantCounty.Models;
 
-namespace MVC
+namespace PassportGrantCounty
 {
     public partial class Startup
     {
