@@ -46,7 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IBackgroundService.cs" />
     <Compile Include="ICommentService.cs" />
     <Compile Include="IExperienceService.cs" />
     <Compile Include="IReplyService.cs" />

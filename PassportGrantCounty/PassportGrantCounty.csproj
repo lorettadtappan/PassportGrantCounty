@@ -186,7 +186,6 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\BackgroundController.cs" />
     <Compile Include="Controllers\CommentController.cs" />
     <Compile Include="Controllers\ExperienceController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -351,9 +350,6 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Background\Create.cshtml" />
-    <Content Include="Views\Background\Delete.cshtml" />
-    <Content Include="Views\Background\Index.cshtml" />
     <Content Include="Views\Experience\Details.cshtml" />
     <Content Include="Views\Experience\Index.cshtml" />
     <Content Include="Views\Experience\Edit.cshtml" />

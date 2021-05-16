@@ -71,10 +71,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BackgroundModels\BackgroundCreateModel.cs" />
-    <Compile Include="BackgroundModels\BackgroundDetailModel.cs" />
-    <Compile Include="BackgroundModels\BackgroundListModel.cs" />
-    <Compile Include="BackgroundModels\BackgroundUpdateModel.cs" />
     <Compile Include="CommentModels\CommentListModel.cs" />
     <Compile Include="CommentModels\CommentCreateModel.cs" />
     <Compile Include="CommentModels\CommentUpdateModel.cs" />

@@ -60,7 +60,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BackgroundService.cs" />
     <Compile Include="CommentService.cs" />
     <Compile Include="ExperienceService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
