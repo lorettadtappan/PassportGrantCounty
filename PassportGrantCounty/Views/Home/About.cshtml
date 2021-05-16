@@ -1,7 +1,47 @@
 ﻿@{
     ViewBag.Title = "About";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<p>Use this area to provide additional information.</p>
+<div class="pageTitle aboutTitle">
+    <h1>About Passport Grant County</h1>
+</div>
+
+<div class="container formStandardStart">
+    <div class="row">
+        <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-12">
+            <h3 class="aboutSubtitle">Learn more about the Passport!</h3>
+            <div class="aboutText">
+                <p>
+                    A collaboration of volunteers in Grant County, Synergy 2012, created The Passport: 1000 Things All Grant County Students Should Experience Before They Graduate.
+                </p>
+                <p>
+                    The Passport's 1000 things are intentional activities that the Synergy committee chose to integrate experiences with the 40 Developmental Assets. Developed by the Search Institute in 1990 and grounded in extensive research in youth development, resiliency, and prevention, the Developmental Assets represent the relationships, opportunities, and personal qualities that young people need to avoid risks and thrive.
+                </p>
+                <p>
+                    Synergy 2012 purposely made all of The Passport experiences created to do with others, specifically adults.  Inspired by Dr. Peter Benson's book, Parent, Teacher, Mentor, Friend: How Every Adult Can Change Kids' Lives is a call to action, inviting every caring adult to change the life of a young person.  His research indicates that relationships with adults are critical to our youth and profoundly impact when there is positive engagement for longer than a year.  Current research shows that most 12- to 18-year-old children have no long-term and meaningful relationships with adults outside their family.
+                </p>
+                <p>
+                    The Passport a practical and easy recipe book for how to connect with kids. Synergy 2012 hopes that all students will now have a catalog of lots of different things they can do—all with a trusted adult in their life. And, yes, eating ice cream is one of them.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <div class="row justify-content-center align-items-center startExperiencingContainer">
+            <button type="button" class="btn btn-primary btn-lg" id="startExperiencing">
+                @{
+                    if (User.Identity.IsAuthenticated)
+                    {
+                        @Html.ActionLink("Start Experiencing", "Index", "MyExperiences")
+                    }
+                    else
+                    {
+                        @Html.ActionLink("Start Experiencing", "Register", "Account")
+                    }
+                }
+            </button>
+        </div>
+    </div>
+</div>
