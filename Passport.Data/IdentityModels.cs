@@ -28,7 +28,6 @@ namespace Passport.Data
         {
         }
 
-        public DbSet<Background> Backgrounds { get; set; }
         public DbSet<Comment> Comments { get; set; }
         public DbSet<RoadMap> RoadMaps { get; set; }
         public DbSet<Reply> Replies { get; set; }
@@ -42,10 +41,6 @@ namespace Passport.Data
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Experience>()
-                .Property(b => b._ChallengeScoreIncrease).HasColumnName("ChallengeScoreIncrease");
-            modelBuilder.Entity<Background>()
-                .Property(b => b._AdventureLog).HasColumnName("AdventureLog");
-            modelBuilder.Entity<RoadMap>()
             .Property(b => b._ChallengeScoreIncrease).HasColumnName("ChallengeScoreIncrease");
             modelBuilder
                 .Conventions
