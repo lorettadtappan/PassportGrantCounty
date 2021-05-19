@@ -32,8 +32,6 @@ C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\bin\Debug\Micros
 C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\bin\Debug\Newtonsoft.Json.xml
 C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\obj\Debug\Passport.Data.csprojAssemblyReference.cache
-C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\obj\Debug\Passport.Data.Migrations.changedStampExperienceRoadMap.resources
-C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\obj\Debug\Passport.Data.csproj.GenerateResource.cache
 C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\obj\Debug\Passport.Data.csproj.CoreCompileInputs.cache
 C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\obj\Debug\Passport.Data.csproj.CopyComplete
 C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\obj\Debug\Passport.Data.dll
@@ -77,3 +75,5 @@ C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\bin\Debug\roslyn
 C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\bin\Debug\roslyn\VBCSCompiler.exe.config
 C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\bin\Debug\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\bin\Debug\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\obj\Debug\Passport.Data.csproj.GenerateResource.cache
+C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\obj\Debug\Passport.Data.Migrations.PassportViewsUpdate.resources
