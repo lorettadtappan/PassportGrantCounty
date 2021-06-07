@@ -20,19 +20,17 @@ namespace Passport.Data
             return userIdentity;
         }
     }
-
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
-
         public DbSet<Comment> Comments { get; set; }
-        public DbSet<RoadMap> RoadMaps { get; set; }
-        public DbSet<Reply> Replies { get; set; }
-        public DbSet<Stamp> Stamps { get; set; }
         public DbSet<Experience> Experiences { get; set; }
+        public DbSet<Reply> Replies { get; set; }
+        public DbSet<RoadMap> RoadMaps { get; set; }
+        public DbSet<Stamp> Stamps { get; set; }
 
         public static ApplicationDbContext Create()
         {
@@ -40,11 +38,10 @@ namespace Passport.Data
         }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Experience>()
-            .Property(b => b._ChallengeScoreIncrease).HasColumnName("ChallengeScoreIncrease");
             modelBuilder
                 .Conventions
                 .Remove<PluralizingTableNameConvention>();
+
             modelBuilder
                 .Configurations
                 .Add(new IdentityUserLoginConfiguration())
@@ -65,6 +62,4 @@ namespace Passport.Data
             HasKey(iur => iur.UserId);
         }
     }
-
-
 }
