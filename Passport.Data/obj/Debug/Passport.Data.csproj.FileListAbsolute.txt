@@ -77,3 +77,13 @@ C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\bin\Debug\Micros
 C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\bin\Debug\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\obj\Debug\Passport.Data.csproj.GenerateResource.cache
 C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\obj\Debug\Passport.Data.Migrations.PassportViewsUpdate.resources
+C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\bin\Debug\System.Web.Http.dll
+C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\bin\Debug\System.Web.Http.Owin.dll
+C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\bin\Debug\System.Web.Http.xml
+C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\bin\Debug\System.Web.Http.Owin.xml

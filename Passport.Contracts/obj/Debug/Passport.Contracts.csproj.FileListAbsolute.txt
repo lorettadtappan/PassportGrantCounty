@@ -72,3 +72,5 @@ C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Contracts\bin\Debug\r
 C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Contracts\bin\Debug\roslyn\VBCSCompiler.exe.config
 C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Contracts\bin\Debug\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Contracts\bin\Debug\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Contracts\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Contracts\bin\Debug\EntityFramework.SqlServer.xml

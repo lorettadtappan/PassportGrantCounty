@@ -12,11 +12,11 @@
     <div class="row">
         @if (User.Identity.IsAuthenticated)
         {
-<div class="offset-lg-1 col-5">
-    <div class="indexCreateLink">
-        <button type="button" value="earnStamp" class="btn btn-primary">@Html.ActionLink("Earn a Stamp", "Earn", "User Stamps")</button>
+    <div class="offset-lg-1 col-5">
+        <div class="indexCreateLink">
+            <button type="button" value="earnStamp" class="btn btn-primary">@Html.ActionLink("Earn a Stamp", "Earn", "User Stamps")</button>
+        </div>
     </div>
-</div>
                 <div class="col-lg-5 col-7">
                     <div class="searchBar">
                         @using (Html.BeginForm("Index", "Stamps", FormMethod.Get))
@@ -77,14 +77,16 @@
         <td class="listButtonsContainer">
             <div class="listButtons">
                 <ul class="horizontalList">
-                    @if (User.Identity.IsAuthenticated && User.Identity.Name == item.StampId || User.IsInRole("Admin"))
+                    @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
                     {
-    <li><button type="button" class="btn btn-cancel btn-sm deleteItem indexButton" data-id="@item.StampId"><i class="far fa-trash-alt"></i></button></li>
-                        <li><button type="button" class="btn btn-primary btn-sm indexButton"><a href="/Spell/Details/@item.StampId"><i class="fas fa-info"></i></a></button></li>
-                                            <li><button type="button" class="btn btn-primary btn-sm indexButton"><a href="/UserSpell/Edit/@item.StampId"><i class="fas fa-edit"></i></a></button></li> }
-                                                            else
-                                                            {
-                                            <li><button type="button" class="btn btn-primary btn-sm indexButton"><a href="/Spell/Details/@item.StampId"><i class="fas fa-info"></i></a></button></li>}
+                <li><button type="button" class="btn btn-cancel btn-sm deleteItem indexButton" data-id="@item.StampId"><i class="far fa-trash-alt"></i></button></li>
+                                    <li><button type="button" class="btn btn-primary btn-sm indexButton"><a href="/Spell/Details/@item.StampId"><i class="fas fa-info"></i></a></button></li>
+                                                        <li><button type="button" class="btn btn-primary btn-sm indexButton"><a href="/UserSpell/Edit/@item.StampId"><i class="fas fa-edit"></i></a></button></li>
+ }
+                                                    else
+                                                    {
+                                    <li><button type="button" class="btn btn-primary btn-sm indexButton"><a href="/Spell/Details/@item.StampId"><i class="fas fa-info"></i></a></button></li>
+}
                 </ul>
             </div>
         </td>
@@ -93,7 +95,6 @@
         </div>
     </div>
     @if (Model.PageCount > 1)
-</div>
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")

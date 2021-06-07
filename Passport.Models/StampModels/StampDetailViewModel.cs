@@ -13,7 +13,7 @@ namespace Passport.Models.StampModels
         public int StampId { get; set; }
         public string Explorer { get; set; }
         public string Name { get; set; }
-        [Display(Name = "Stamp Level")]
+        [Display(Name = "Road Map Stamp")]
         public string StampLevel { get; set; }
     }
 }
