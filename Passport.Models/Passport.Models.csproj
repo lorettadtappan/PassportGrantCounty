@@ -83,6 +83,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommentModels\CommentDetailModel.cs" />
     <Compile Include="CommentModels\CommentListModel.cs" />
     <Compile Include="CommentModels\CommentCreateModel.cs" />
     <Compile Include="CommentModels\CommentUpdateModel.cs" />

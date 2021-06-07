@@ -20,7 +20,7 @@ namespace Passport.Services
             _userId = userId;
         }
     }
-    public bool Create(CommentCreateModel model)
+    public bool CreateComment(CommentCreateModel model)
     {
         var entity =
             new Comment()
@@ -37,7 +37,7 @@ namespace Passport.Services
             return ctx.SaveChanges() == 1;
         }
     }
-    public IEnumerable<CommentListModel> GetCommentById()
+    public IEnumerable<CommentListModel> GetComments()
     {
         using (var ctx = new ApplicationDbContext())
         {
@@ -56,6 +56,55 @@ namespace Passport.Services
                     );
 
             return query.ToArray();
+        }
+    }
+    public CommentDetailModel GetCommentById(int id)
+    {
+        using (var ctx = new ApplicationDbContext())
+        {
+            var entity =
+                ctx
+                    .Comments
+                    .Single(e => e.CommentId == id && e.OwnerId == _userId);
+            return
+                new CommentDetail
+                {
+                    CommentId = entity.CommentId,
+                    Title = entity.Title,
+                    Content = entity.Content,
+                    CreatedUtc = entity.CreatedUtc,
+                    ModifiedUtc = entity.ModifiedUtc
+                };
+        }
+    }
+    public bool UpdateCommentModel(CommentEdit model)
+    {
+        using (var ctx = new ApplicationDbContext())
+        {
+            var entity =
+                ctx
+                    .Comments
+                    .Single(e => e.CommentId == model.CommentId && e.OwnerId == _userId);
+
+            entity.Title = model.Title;
+            entity.Content = model.Content;
+            entity.ModifiedUtc = DateTimeOffset.UtcNow;
+
+            return ctx.SaveChanges() == 1;
+        }
+    }
+    public bool DeleteComment(int commentId)
+    {
+        using (var ctx = new ApplicationDbContext())
+        {
+            var entity =
+                ctx
+                    .Comments
+                    .Single(e => e.CommentId == commentId && e.OwnerId == _userId);
+
+            ctx.Comments.Remove(entity);
+
+            return ctx.SaveChanges() == 1;
         }
     }
 }

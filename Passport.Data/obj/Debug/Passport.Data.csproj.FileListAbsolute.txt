@@ -87,3 +87,4 @@ C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\bin\Debug\Micros
 C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\bin\Debug\System.Net.Http.Formatting.xml
 C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\bin\Debug\System.Web.Http.xml
 C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\bin\Debug\System.Web.Http.Owin.xml
+C:\Users\ltappan\source\repos\PassportGrantCounty\Passport.Data\obj\Debug\Passport.Data.Migrations.updatedatabase.resources
