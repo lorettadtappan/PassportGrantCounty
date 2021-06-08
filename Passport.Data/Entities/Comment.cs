@@ -17,6 +17,7 @@ namespace Passport.Data.Entities
         public Guid OwnerId { get; set; }
 
         [Required]
+        [Display(Name = "Your Note")]
         public string Title { get; set; }
 
         [Required]

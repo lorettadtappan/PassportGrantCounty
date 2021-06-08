@@ -13,6 +13,11 @@ namespace PassportGrantCounty.Controllers
     [Authorize]
     public class CommentController : Controller
     {
+        public ActionResult Index()
+        {
+            var model = new CommentListModel[0];
+            return View(model);
+        }
         private CommentService CreateCommentService()
         {
             var userId = Guid.Parse(User.Identity.GetUserId());
@@ -41,7 +46,7 @@ namespace PassportGrantCounty.Controllers
         {
             CommentService commentService = CreateCommentService();
             var note = commentService.GetCommentById(id);
-            return Ok(comment);
+            return Ok();
         }
         public IHttpActionResult Put(CommentEdit comment)
         {

@@ -26,17 +26,17 @@ namespace Passport.Data
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
-        public DbSet<Comment> Comments { get; set; }
-        public DbSet<Experience> Experiences { get; set; }
-        public DbSet<Reply> Replies { get; set; }
-        public DbSet<RoadMap> RoadMaps { get; set; }
-        public DbSet<Stamp> Stamps { get; set; }
-
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
         }
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        public DbSet<Comment> Comments { get; set; } //
+        public DbSet<Experience> Experiences { get; set; } //
+        public DbSet<Reply> Replies { get; set; } //
+        public DbSet<RoadMap> RoadMaps { get; set; } //
+        public DbSet<Stamp> Stamps { get; set; } //
+    }
+    protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder
                 .Conventions
