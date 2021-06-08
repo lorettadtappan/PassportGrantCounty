@@ -18,6 +18,23 @@ namespace PassportGrantCounty.Controllers
             var model = new CommentListModel[0];
             return View(model);
         }
+        // Add method here
+        // GET
+        public ActionResult Create()
+        {
+            return View();
+        }
+        // Add code here
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Create(CommentCreateModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                
+            }
+            return View(model);
+        }
         private CommentService CreateCommentService()
         {
             var userId = Guid.Parse(User.Identity.GetUserId());
