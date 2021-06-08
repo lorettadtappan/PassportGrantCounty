@@ -2,9 +2,6 @@
 using Passport.Models.CommentModels;
 using Passport.Services;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
 
@@ -15,7 +12,9 @@ namespace PassportGrantCounty.Controllers
     {
         public ActionResult Index()
         {
-            var model = new CommentListModel[0];
+            var userId = Guid.Parse(User.Identity.GetUserId());
+            var service = new CommentService(userId);
+            var model = service.GetComments();
             return View(model);
         }
         // Add method here
@@ -29,12 +28,30 @@ namespace PassportGrantCounty.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(CommentCreateModel model)
         {
-            if (ModelState.IsValid)
+            if (ModelState.IsValid) return View(model);
+            var service = CreateCommentService();
+            if (service.CreateComment(model))
             {
-                
+                TempData["SaveResult"] = "Your note was created.";
+                return RedirectToAction("Index");
             }
+                ModelState.AddModelError("", "Note could not be created.");
+                return View(model);
+        }
+        public ActionResult Details (int id)
+        {
+            var svc = CreateCommentService();
+            var model = svc.GetCommentById(id);
+
             return View(model);
         }
+        private CommentService CreateCommentService()
+        {
+            var userId = Guid.Parse(User.Identity.GetUserId);
+            var service = new CommentService(userId);
+            return service;
+        }
+
         private CommentService CreateCommentService()
         {
             var userId = Guid.Parse(User.Identity.GetUserId());

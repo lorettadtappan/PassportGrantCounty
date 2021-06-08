@@ -1,0 +1,23 @@
+﻿@model Passport.Models.CommentModels.CommentDetailModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CommentDetailModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+    </dl>
+</div>
+<table>
+    <tr>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.CommentId }) |
+            @Html.ActionLink("Details", "Details", new { id = item.CommentId }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.CommentId })
+        </td>
+    </tr>
+</table>
